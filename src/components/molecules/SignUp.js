@@ -28,6 +28,10 @@ const SignUp = ({history}) => {
           Password
           <input name="password" type="password" placeholder="Password"/>
         </label>
+        <label>
+          Confirm Password
+          <input name="password" type="password" placeholder="Password"/>
+        </label>
         <button type="submit">Sign Up</button>
       </form>
     </div>
