@@ -30,7 +30,7 @@ const SignUp = ({history}) => {
         </label>
         <label>
           Confirm Password
-          <input name="password" type="password" placeholder="Password"/>
+          <input name="confirm_password" type="password" placeholder="Confirm Password"/>
         </label>
         <button type="submit">Sign Up</button>
       </form>
