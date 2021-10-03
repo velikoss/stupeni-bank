@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/Header/Header.jsx';
 import {BrowserRouter, Link, Route, Router, Switch} from "react-router-dom";
-import Testing from "./pages/Testing/Testing";
+
 
 
 function App() {
@@ -9,7 +9,6 @@ function App() {
         <div>
             <Switch>
                 <Route path="/AnyzBlyz">
-                    <Testing/>
                 </Route>
                 <Route path="/">
                     <Link to="/AnyzBlyz">
