@@ -2,6 +2,7 @@ import React, {useRef, useState} from "react"
 import {Alert, Button, Card, Form} from "react-bootstrap"
 import {useAuth} from "./AuthContext";
 import {Link, useHistory} from "react-router-dom"
+import './Login.css'
 
 export default function Login() {
   const emailRef = useRef()
@@ -28,30 +29,42 @@ export default function Login() {
 
   return (
     <>
-      <Card>
+      <div id='LoginPage'>
+        <div id='LoginGreeting'>
+          <div id='LogoAndText'>
+            <div id='Logo'></div>
+            <div id='Vseobuch'>Всеобуч ЦентрИнвест</div>
+          </div>
+          <div id='Slogan'>1907</div>
+        </div>
+        
+      
+      <Card id='LoginCard'>
         <Card.Body>
-          <h2 className="text-center mb-4">Log In</h2>
+          <h2 className="text-center mb-4">Вход</h2>
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit}>
             <Form.Group id="email">
-              <Form.Label>Email</Form.Label>
+              <Form.Label>Почта</Form.Label>
               <Form.Control type="email" ref={emailRef} required/>
             </Form.Group>
             <Form.Group id="password">
-              <Form.Label>Password</Form.Label>
+              <Form.Label>Пароль</Form.Label>
               <Form.Control type="password" ref={passwordRef} required/>
             </Form.Group>
             <Button disabled={loading} className="w-100" type="submit">
-              Log In
+              Продолжить
             </Button>
           </Form>
           <div className="w-100 text-center mt-3">
-            <Link to="/forgot-password">Forgot Password?</Link>
+            <Link to="/forgot-password">Забыли пароль, ахахах ну тупой?</Link>
+          </div>
+          <div className="w-100 text-center mt-2">
+            Ещё нет аккаунта? <Link to="/signup">Зарегестрироваться</Link>
           </div>
         </Card.Body>
       </Card>
-      <div className="w-100 text-center mt-2">
-        Need an account? <Link to="/signup">Sign Up</Link>
+      
       </div>
     </>
   )
