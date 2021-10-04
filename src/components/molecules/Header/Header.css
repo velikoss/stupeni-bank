@@ -1,0 +1,22 @@
+.img {
+    background-image: url("../../../img/logo.png");
+    width: 63px;
+    height: 76px;
+    background-size: 63px auto;
+    position: relative;
+    display: flex;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font: 26px "Source Sans Pro";
+    color: #18AB00 !important;
+    background: linear-gradient(90.4deg, rgba(189, 255, 0, 0.74) 0%, rgba(143, 242, 0, 0.74) 56.25%, rgba(51, 215, 0, 0.74) 99.99%, rgba(29, 208, 0, 0.74) 100%);
+}
+
+p {
+    position: relative;
+}
