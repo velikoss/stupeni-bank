@@ -25,7 +25,7 @@
 
 }
 .Text{
-    height: 400PX;
+    height: 400px;
     margin-left: 40px;
     font-family: Noto Sans;
     font-style: normal;
@@ -53,4 +53,6 @@
     box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
     border: 0;
     border-radius: 25px;
+    margin-top: 6.5%;
+
 }
