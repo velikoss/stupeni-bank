@@ -15,17 +15,18 @@
 
 }
 #Img{
-    height: 400px;
-    width: 500px;
+    height: 450px;
+    width: 600px;
     background-image: url("../../img/course.jpg");
     background-repeat: no-repeat;
-    background-size: 500px 400px;
+    background-size: 600px 450px;
     border: 0;
     border-radius: 25px;
 
 }
 .Text{
-    height: 400px;
+    align-content: center;
+    height: auto;
     margin-left: 40px;
     font-family: Noto Sans;
     font-style: normal;
@@ -38,21 +39,23 @@
 #Description{
     margin-top: 20px;
     font-size: 30px;
-    line-height: 41px;
+    line-height: 40px;
     color: #424242;
 }
 #Next{
     background-color:#EBFF00;
     position: relative;
     height: 50px;
-    width: 30%;
+    width: 50%;
     left: 0%;
     bottom: 0%;
     
     background: #EBFF00;
     box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
     border: 0;
-    border-radius: 25px;
-    margin-top: 6.5%;
-
+    border-radius: 10px;
+    margin-top: 2%;
+}
+#Next:hover{
+    color: #424242;
 }

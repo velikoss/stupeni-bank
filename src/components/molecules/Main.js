@@ -15,8 +15,8 @@ const Main = () => {
                         <p>Вообще норм курс.</p>
                         <p>Реально топ.</p>
                         <p>Сертификат по окончанию курса.</p>
+                        <button id="Next">Начать</button>
                     </div>
-                    <button id="Next">Начать</button>
                 </div>
             </div>
             
