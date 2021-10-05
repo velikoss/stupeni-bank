@@ -6,6 +6,7 @@ import SignUp from "./components/molecules/SignUp";
 import SignOutButton from "./components/atoms/SignOutButton";
 import ForgotPassword from "./components/molecules/ForgotPassword";
 import Main from "./components/molecules/Main";
+import React from "react";
 
 function App() {
   return (

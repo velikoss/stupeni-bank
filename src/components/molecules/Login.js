@@ -65,7 +65,6 @@ export default function Login() {
             </div>
           </Card.Body>
         </Card>
-
       </div>
     </>
   )
