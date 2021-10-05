@@ -2,7 +2,6 @@
     background-color: #FBFFF2;
     display: flex;
     justify-content: center;
-    
 }
 .CourseDescription{
     display: flex;
@@ -49,7 +48,7 @@
     width: 50%;
     left: 0%;
     bottom: 0%;
-    
+
     background: #EBFF00;
     box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
     border: 0;
