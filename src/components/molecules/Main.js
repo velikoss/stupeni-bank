@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../Header/Header.jsx'
 import "./Main.css"
 
 
@@ -19,7 +18,7 @@ const Main = () => {
                     <button id="Next">Продолжить</button>
                 </div>
             </div>
-            
+
         </div>
     );
 };
