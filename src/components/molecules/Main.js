@@ -6,7 +6,7 @@ import "./Main.css"
 const Main = () => {
     return (
         <div className="Main">
-            <div className="CourceDescription">
+            <div className="CourseDescription">
                 <div id="Img"></div>
                 <div className="Text">
                     <div id="Title">Курс "Малый бизннес"</div>
@@ -16,7 +16,7 @@ const Main = () => {
                         <p>Реально топ.</p>
                         <p>Сертификат по окончанию курса.</p>
                     </div>
-                    <button id="Next">Продолжить</button>
+                    <button id="Next">Начать</button>
                 </div>
             </div>
             
