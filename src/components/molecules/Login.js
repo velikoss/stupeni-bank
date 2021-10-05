@@ -30,6 +30,7 @@ export default function Login() {
   return (
     <>
       <div id='LoginPage'>
+        
         <div id='LoginGreeting'>
           <div id='LogoAndText'>
             <div id='Logo'></div>
