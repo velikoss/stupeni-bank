@@ -23,6 +23,7 @@
   display: flex;
   justify-content: center;
   margin:10px 0px;
+  font-size: 15px;
 }
 .form-control{
   height: 20px;
@@ -32,6 +33,10 @@
   border-radius: 0px;
   border-color: black;
   outline-width: 0px !important;
+  box-shadow: none !important;
+}
+.form-control:active{
+  border-color: #00ff15;
 }
 .form-label{
   text-align: left;
