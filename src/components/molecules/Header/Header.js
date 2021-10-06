@@ -3,8 +3,11 @@ import "./Header.css"
 import {Container, Nav, Navbar, NavLink} from "react-bootstrap";
 import app from "../../../firebase_config/firebase";
 import logo from "../../../img/logo.png"
+import {useAuth} from "../AuthContext";
 
 const Header = () => {
+  const {currentUser} = useAuth()
+
   return (
     <Navbar expand="lg" className="head">
       <Container>
@@ -21,6 +24,7 @@ const Header = () => {
             <Nav.Link href="/about" className="title">Информация</Nav.Link>
             <Nav.Link href="/feedbacks" className="title">Отзывы</Nav.Link>
           </Nav>
+          {currentUser}
           <Nav className="justify-content-end">
             <NavLink onClick={() => app.auth().signOut()} className="title margin:0;">Выйти</NavLink>
           </Nav>

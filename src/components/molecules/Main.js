@@ -6,6 +6,7 @@ import {Link} from "react-router-dom";
 const Main = () => {
     return (
         <div className="Main">
+
             <Header/>
             <div className="CourseDescription">
                 <div id="Img"/>
