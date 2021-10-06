@@ -1,7 +1,5 @@
 .img {
     background-image: url("../../../img/logo.png");
-    width: 63px;
-    height: 76px;
     background-size: 63px auto;
     position: relative;
     display: flex;

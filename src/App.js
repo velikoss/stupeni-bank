@@ -9,7 +9,7 @@ import Main from "./components/molecules/Main";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <PrivateRoute exact path="/" component={Main}/>
       <Route exact path="/login" component={Login}/>
       <Route exact path="/signup" component={SignUp}/>
