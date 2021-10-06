@@ -25,8 +25,7 @@
     border-radius: 25px;
 
 }
-
-.Text {
+.Text{
     align-content: center;
     height: auto;
     margin-left: 40px;
@@ -45,8 +44,8 @@
     line-height: 40px;
     color: #424242;
 }
-
-#Next {
+#Next{
+    background-color:#EBFF00;
     position: relative;
     height: 50px;
     width: 50%;

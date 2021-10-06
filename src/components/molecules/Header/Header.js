@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Header.css"
-import {Container, Nav, Navbar, NavLink} from "react-bootstrap";
+import {Container, Nav, Navbar} from "react-bootstrap";
 import app from "../../../firebase_config/firebase";
 import logo from "../../../img/logo.png"
 
@@ -27,7 +27,6 @@ const Header = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-  )
     ;
 };
 

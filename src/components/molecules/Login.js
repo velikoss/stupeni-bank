@@ -14,7 +14,6 @@ export default function Login() {
 
   async function handleSubmit(e) {
     e.preventDefault()
-
     try {
       setError("")
       setLoading(true)
@@ -30,42 +29,42 @@ export default function Login() {
   return (
     <>
       <div id='LoginPage'>
-        
         <div id='LoginGreeting'>
           <div id='LogoAndText'>
-            <div id='Logo'></div>
-            <div id='Vseobuch'><p>Всеобуч</p>
-            <p>ЦентрИнвест</p></div>
+            <div id='Logo'>
+
+            </div>
+            <div id='Vseobuch'>Всеобуч ЦентрИнвест</div>
           </div>
+          <div id='Slogan'>1907</div>
         </div>
-        
-      
-      <Card id='LoginCard'>
-        <Card.Body>
-          <h2 className="text-center mb-4">Вход</h2>
-          {error && <Alert variant="danger">{error}</Alert>}
-          <Form onSubmit={handleSubmit}>
-            <Form.Group id="email">
-              <Form.Label>Почта</Form.Label>
-              <Form.Control type="email" ref={emailRef} required/>
-            </Form.Group>
-            <Form.Group id="password">
-              <Form.Label>Пароль</Form.Label>
-              <Form.Control type="password" ref={passwordRef} required/>
-            </Form.Group>
-            <Button disabled={loading} id='LoginButton' type="submit">
-              Продолжить
-            </Button>
-          </Form>
-          <div className="w-100 text-center mt-3">
-            <Link to="/forgot-password">Забыли пароль?</Link>
-          </div>
-          <div className="w-100 text-center mt-2">
-            Ещё нет аккаунта? <Link to="/signup">Зарегистрироваться</Link>
-          </div>
-        </Card.Body>
-      </Card>
-      
+
+
+        <Card id='LoginCard'>
+          <Card.Body>
+            <h2 className="text-center mb-4">Вход</h2>
+            {error && <Alert variant="danger">{error}</Alert>}
+            <Form onSubmit={handleSubmit}>
+              <Form.Group id="email">
+                <Form.Label>Почта</Form.Label>
+                <Form.Control type="email" ref={emailRef} required/>
+              </Form.Group>
+              <Form.Group id="password">
+                <Form.Label>Пароль</Form.Label>
+                <Form.Control type="password" ref={passwordRef} required/>
+              </Form.Group>
+              <Button disabled={loading} className="w-100" type="submit">
+                Продолжить
+              </Button>
+            </Form>
+            <div className="w-100 text-center mt-3">
+              <Link to="/forgot-password">Забыли пароль, ахахах ну тупой?</Link>
+            </div>
+            <div className="w-100 text-center mt-2">
+              Ещё нет аккаунта? <Link to="/signup">Зарегестрироваться</Link>
+            </div>
+          </Card.Body>
+        </Card>
       </div>
     </>
   )

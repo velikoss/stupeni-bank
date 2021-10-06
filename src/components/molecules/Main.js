@@ -8,7 +8,7 @@ const Main = () => {
         <div className="Main">
             <Header/>
             <div className="CourseDescription">
-                <div id="Img"/>
+                <div id="Img"></div>
                 <div className="Text">
                     <div id="Title">Курс "Малый бизннес"</div>
                     <div id="Description">
