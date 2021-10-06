@@ -3,11 +3,12 @@ import "./Course.css"
 import { ProSidebar, SidebarHeader, SidebarFooter, SidebarContent, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
 import {Link} from "react-router-dom";
-
+import Header from './Header/Header'
 const Course = () => {
     return (
         <div id="CoursePage">
             <div id='Course'>
+            <Header></Header>
             <ProSidebar>
             <SidebarHeader>
                 Курс «Малый бизнес»
