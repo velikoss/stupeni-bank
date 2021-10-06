@@ -1,12 +1,12 @@
 import './App.css';
 import {Route} from "react-router-dom";
 import PrivateRoute from "./components/molecules/PrivateRoute";
-import Login from "./components/molecules/Login";
-import SignUp from "./components/molecules/SignUp";
-import SignOutButton from "./components/atoms/SignOutButton";
-import ForgotPassword from "./components/molecules/ForgotPassword";
-import Main from './components/molecules/Main';
-import Course from './components/molecules/Course';
+
+import Login from "./components/molecules/Login/Login";
+import SignUp from "./components/molecules/SignUp/SignUp";
+import ForgotPassword from "./components/molecules/ForgotPassword/ForgotPassword";
+import Main from "./components/molecules/Main/Main";
+import Course from "./components/molecules/Course/Course"
 function App() {
   return (
     <div>

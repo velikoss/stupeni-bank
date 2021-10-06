@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../Header/Header.jsx'
+import Header from '../../Header/Header.jsx'
 import "./Course.css"
 import { ProSidebar, SidebarHeader, SidebarFooter, SidebarContent, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
