@@ -27,14 +27,6 @@ const Header = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    // <div className="head">
-    //   <div className="img"/>
-    //   <div className="title">Всеобуч<br/>ЦентрИнвест</div>
-    //   <CoursesButton/>
-    //   <AboutButton/>
-    //   <FeedbacksButton/>
-    //   <SignOutButton/>
-    // </div>
   )
     ;
 };

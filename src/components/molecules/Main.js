@@ -1,13 +1,14 @@
 import React from 'react';
-import Header from '../Header/Header.jsx'
+import Header from '../molecules/Header/Header'
 import "./Main.css"
 
 
 const Main = () => {
     return (
         <div className="Main">
+            <Header/>
             <div className="CourseDescription">
-                <div id="Img"></div>
+                <div id="Img"/>
                 <div className="Text">
                     <div id="Title">Курс "Малый бизннес"</div>
                     <div id="Description">
@@ -19,7 +20,6 @@ const Main = () => {
                     </div>
                 </div>
             </div>
-            
         </div>
     );
 };
