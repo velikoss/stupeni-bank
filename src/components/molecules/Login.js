@@ -36,7 +36,7 @@ export default function Login() {
             </div>
             <div id='Vseobuch'>Всеобуч ЦентрИнвест</div>
           </div>
-          <div id='Slogan'>1907</div>
+          
         </div>
 
 
@@ -58,10 +58,10 @@ export default function Login() {
               </Button>
             </Form>
             <div className="w-100 text-center mt-3">
-              <Link to="/forgot-password">Забыли пароль, ахахах ну тупой?</Link>
+              <Link to="/forgot-password">Забыли пароль?</Link>
             </div>
             <div className="w-100 text-center mt-2">
-              Ещё нет аккаунта? <Link to="/signup">Зарегестрироваться</Link>
+              Ещё нет аккаунта? <Link to="/signup">Зарегистрироваться</Link>
             </div>
           </Card.Body>
         </Card>

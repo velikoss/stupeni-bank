@@ -11,7 +11,7 @@ const Main = () => {
             <div className="CourseDescription">
                 <div id="Img"></div>
                 <div className="Text">
-                    <div id="Title">Курс "Малый бизннес"</div>
+                    <div id="Title">Курс "Малый бизнес"</div>
                     <div id="Description">
                         <p>12 тем, раскрывающих основы предпринимательства.</p>
                         <p>Вообще норм курс.</p>
