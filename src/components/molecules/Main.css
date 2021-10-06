@@ -1,18 +1,21 @@
-.Main{
-    background-color: #FBFFF2;
+.Main {
+    background: #E5E5E5;
     display: flex;
     justify-content: center;
+
 }
-.CourseDescription{
+
+.CourseDescription {
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: absolute;
     width: 1240px;
-    height: 100vh;
-
+    height: calc(100vh - 100px);
+    margin-top: 100px;
 }
-#Img{
+
+#Img {
     height: 450px;
     width: 600px;
     background-image: url("../../img/course.jpg");
@@ -31,10 +34,11 @@
     font-weight: normal;
 }
 
-#Title{
+#Title {
     font-size: 50px;
 }
-#Description{
+
+#Description {
     margin-top: 20px;
     font-size: 30px;
     line-height: 40px;
@@ -43,13 +47,15 @@
 #Next{
     position: relative;
     height: 50px;
+    width: 50%;
     left: 0;
     bottom: 0;
 
     background: #EBFF00;
-    border-radius: 6px;
-    width: 332px;
-    line-height: 48px !important;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 0;
+    border-radius: 10px;
+    margin-top: 2%;
 }
 
 #Next:hover {
