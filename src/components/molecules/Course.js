@@ -3,13 +3,11 @@ import "./Course.css"
 import {Menu, MenuItem, ProSidebar, SidebarContent, SidebarHeader, SubMenu} from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
 import {Link} from "react-router-dom";
-import Header from './Header/Header'
 
 const Course = () => {
     return (
         <div id="CoursePage">
             <div id='Course'>
-            <Header></Header>
             <ProSidebar>
             <SidebarHeader>
                 Курс «Малый бизнес»
@@ -24,7 +22,10 @@ const Course = () => {
                         <MenuItem>Тест</MenuItem>
                     </SubMenu>
                     <SubMenu title={`Отличия малого и большого бизнеса`}>
-                        <MenuItem>Лекция</MenuItem>
+                        <MenuItem>
+                            Лекция
+                            <Link to="/course/lection2" />
+                        </MenuItem>
                         <MenuItem>Тест</MenuItem>
                     </SubMenu>
                     <SubMenu title={`Формула успеха малого бизнеса`}>

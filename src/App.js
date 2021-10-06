@@ -5,7 +5,7 @@ import Login from "./components/molecules/Login";
 import SignUp from "./components/molecules/SignUp";
 import ForgotPassword from "./components/molecules/ForgotPassword";
 import Main from "./components/molecules/Main";
-import Course from "./components/molecules/Course";
+import Lection1 from "./components/Lections/Lection1.js";
 import LectionRoutes from "./components/molecules/LectionRoutes";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <Route exact path="/login" component={Login}/>
       <Route exact path="/signup" component={SignUp}/>
       <Route exact path="/forgot-password" component={ForgotPassword}/>
-      <Route exact path="/course" component={Course}/>
+      <Route exact path="/course" component={Lection1}/>
       <LectionRoutes/>
     </div>
   );

@@ -1,0 +1,14 @@
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    font-size: 18px;
+    margin: 2%;
+}
+
+.Lection {
+    border: 1em solid #1BB907;
+    margin: 2%;
+}
