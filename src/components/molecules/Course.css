@@ -1,0 +1,32 @@
+.pro-sidebar-header{
+    background-color: rgba(0,0,0,0);
+}
+.pro-item-content{
+    white-space: normal !important;
+}
+nav{
+    background:#fbffd4 !important;
+    color: black !important;
+}
+
+.react-slidedown{
+    background: #faffc8 !important;
+}
+.pro-inner-item:hover{
+    color:rgb(111, 111, 122) !important
+}
+.pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item:focus{
+    color:black !important;
+    font-weight: 500;
+}
+.pro-sidebar-header{
+    height: 10vh !important;
+    text-align: center !important;
+    font-size: 25px !important;
+    align-content: center !important;
+    background-color: #f8fdbe !important;
+    color:black;
+}
+.pro-sidebar{
+    position: block;
+}
