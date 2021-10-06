@@ -6,7 +6,7 @@ import SignUp from "./components/molecules/SignUp";
 import SignOutButton from "./components/atoms/SignOutButton";
 import ForgotPassword from "./components/molecules/ForgotPassword";
 import Main from "./components/molecules/Main";
-import Courses from "./components/molecules/Courses";
+import Course from "./components/molecules/Course";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <Route exact path="/login" component={Login}/>
       <Route exact path="/signup" component={SignUp}/>
       <Route exact path="/forgot-password" component={ForgotPassword}/>
-      <PrivateRoute exact path="course" component={Courses}/>
+      <Route exact path="/course" component={Course}/>
     </div>
   );
 }
