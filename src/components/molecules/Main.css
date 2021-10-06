@@ -1,10 +1,10 @@
-.Main{
-    background-color: #FBFFF2;
+.Main {
+    background: #E5E5E5;
     display: flex;
     justify-content: center;
-    
 }
-.CourseDescription{
+
+.CourseDescription {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -15,6 +15,11 @@
 
 }
 #Img{
+    height: calc(100vh - 100px);
+    margin-top: 100px;
+}
+
+#Img {
     height: 450px;
     width: 600px;
     background-image: url("../../img/course.jpg");
@@ -29,11 +34,12 @@
     height: auto;
     margin-left: 40px;
     font-family: Noto Sans;
+    font-family: Noto Sans, serif;
     font-style: normal;
     font-weight: normal;
 }
 
-#Title{
+#Title {
     font-size: 50px;
 }
 #Description{
@@ -56,6 +62,23 @@
     border-radius: 10px;
     margin-top: 2%;
 }
-#Next:hover{
+
+#Description {
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 40px;
+    color: #424242;
+}
+#Next{
+    position: relative;
+    width: 332px;
+    line-height: 48px;
+    font-size: 22px;
+    background: #EBFF00;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+}
+
+#Next:hover {
     color: #424242;
 }

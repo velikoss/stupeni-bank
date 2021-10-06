@@ -3,6 +3,6 @@ Project for Stupeni Uspeha &amp; Center Invest Bank
 <br/>
 ### TODO:
 - [X] Login backend
-- [ ] Login frontend
+- [X] Login frontend
 - [ ] Main page
 - [ ] Tests
