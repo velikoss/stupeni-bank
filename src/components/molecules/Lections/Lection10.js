@@ -1,8 +1,9 @@
 import React from 'react';
 import Course from "../Course";
 import Header from "../Header/Header";
+import "Lection.css";
 
-const Lection1 = () => {
+const Lection3 = () => {
   return (
     <div>
         <Header/>
@@ -44,4 +45,4 @@ const Lection1 = () => {
   );
 };
 
-export default Lection1;
+export default Lection3;
