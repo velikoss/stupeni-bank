@@ -26,7 +26,7 @@
     align-content: center;
     height: auto;
     margin-left: 40px;
-    font-family: Noto Sans;
+    font-family: Noto Sans, serif;
     font-style: normal;
     font-weight: normal;
 }
@@ -40,16 +40,18 @@
     line-height: 40px;
     color: #424242;
 }
-.a {
-    width: 50px;
-}
 #Next{
-    font-size: 24px !important;
+    position: relative;
+    height: 50px;
+    left: 0;
+    bottom: 0;
+
     background: #EBFF00;
     border-radius: 6px;
     width: 332px;
     line-height: 48px !important;
 }
-#Next:hover{
+
+#Next:hover {
     color: #424242;
 }

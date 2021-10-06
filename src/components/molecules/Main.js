@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from '../molecules/Header/Header'
 import "./Main.css"
 import {Link} from "react-router-dom";
 
@@ -6,6 +7,7 @@ import {Link} from "react-router-dom";
 const Main = () => {
     return (
         <div className="Main">
+            <Header/>
             <div className="CourseDescription">
                 <div id="Img"></div>
                 <div className="Text">
@@ -19,7 +21,6 @@ const Main = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };
