@@ -2,7 +2,7 @@ import React from 'react';
 import Course from "../Course";
 import Header from "../Header/Header";
 import "Lection.css";
-const Lection3 = () => {
+const Lection4 = () => {
   return (
     <div>
         <Header/>
@@ -173,4 +173,4 @@ const Lection3 = () => {
     </div>
   );
 };
-export default Lection3;
+export default Lection4;

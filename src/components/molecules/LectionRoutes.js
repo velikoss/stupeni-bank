@@ -1,9 +1,17 @@
-
-
 import React from 'react';
 import {Link} from "react-router-dom";
-import {Lection1, Lection2, Lection3, Lection4, Lection5, Lection6, Lection7,
-    Lection8, Lection9, Lection10, Lection11, Lection12} from "./components/molecules/Lections/";  
+import Lection1 from "./Lections/Lection1";  
+import Lection2 from "./Lections/Lection2";  
+import Lection3 from "./Lections/Lection3";  
+import Lection4 from "./Lections/Lection4";  
+import Lection5 from "./Lections/Lection5";  
+import Lection6 from "./Lections/Lection6";  
+import Lection7 from "./Lections/Lection7";  
+import Lection8 from "./Lections/Lection8";  
+import Lection9 from "./Lections/Lection9";  
+import Lection10 from "./Lections/Lection10";  
+import Lection11 from "./Lections/Lection11";  
+import Lection12 from "./Lections/Lection12";  
 
 const LectionRoutes = () => {
   return (
