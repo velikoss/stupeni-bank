@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Main.css"
+import {Link} from "react-router-dom";
 
 
 const Main = () => {
@@ -14,7 +15,7 @@ const Main = () => {
                         <p>Вообще норм курс.</p>
                         <p>Реально топ.</p>
                         <p>Сертификат по окончанию курса.</p>
-                        <button id="Next">Начать</button>
+                        <Link to="/course" id="Next" className="btn mt-4">Начать</Link>
                     </div>
                 </div>
             </div>
