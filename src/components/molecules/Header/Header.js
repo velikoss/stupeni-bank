@@ -10,7 +10,7 @@ const Header = () => {
       <Container>
         <Nav>
           <Nav.Link>
-            <img src={logo} width="70" height="85 " alt="Q"/>
+            <img src={logo} width="70vw" height="80vh" alt="Q"/>
           </Nav.Link>
         </Nav>
         <Navbar.Brand href="/" className="name">Всеобуч<br/>Центр Инвест</Navbar.Brand>
