@@ -3,7 +3,7 @@ import {Checkbox, FormControl, FormControlLabel, FormGroup} from "@material-ui/c
 import {Button} from "react-bootstrap";
 import Header from "../molecules/Header/Header";
 import Sidebar from "../molecules/Sidebar"
-
+import './Test.css'
 function Test1() {
   function submit() {
     let count = 0;
@@ -104,7 +104,7 @@ function Test1() {
       <Header/>
       <div style={{"display":"flex", "flex-direction":"row"}}>
       <Sidebar/>
-      <div>
+      <div id = 'chert_s_nim'>
       <div>
         <div className="question">
           <p>Главное преимущество малого бизнеса:</p>
