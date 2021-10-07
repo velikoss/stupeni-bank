@@ -1,5 +1,5 @@
 import React from 'react';
-import Course from "../molecules/Course";
+import Course from "../molecules/Course/Course";
 import Header from "../molecules/Header/Header";
 import "./Lection.css";
 

@@ -9,7 +9,7 @@
 }
 
 #Logo{
-	background-image: url('../../img/logo.png');
+	background-image: url('../../../img/logo.png');
 	width: 126px;
 	height: 152px;
 	background-repeat: no-repeat;
