@@ -15,7 +15,7 @@ function App() {
       <Route exact path="/login" component={Login}/>
       <Route exact path="/signup" component={SignUp}/>
       <Route exact path="/forgot-password" component={ForgotPassword}/>
-      <Route exact path="/course" component={Lection1}/>
+      <PrivateRoute exact path="/course" component={Lection1}/>
       <LectionRoutes/>
     </div>
   );

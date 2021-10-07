@@ -22,7 +22,9 @@ function Test1() {
     }
     console.log(count)
     if (count === 9) {
-      console.log("bingo")
+      alert("Bingo")
+    } else {
+      alert("Вы долбаеб")
     }
   }
   const [count, setCount] = useState(0)
@@ -151,7 +153,7 @@ function Test1() {
                   onChange={handleChange2}
                   name="a4"
                 />
-              } label="на его долю приходится 50% валового внутреннего продукта"/>
+              } label="Богатство и гостеприимство"/>
             <FormControlLabel
               control={
                 <Checkbox
@@ -161,7 +163,7 @@ function Test1() {
                   name="a5"
                 />
               }
-              label="он предоставляет более качественные продукты и услуги в более сжатые сроки, при более низких издержках"/>
+              label="Помощь землякам, меценатство, поддержка образования, забота об окружающей среде"/>
             <FormControlLabel
               control={
                 <Checkbox
@@ -171,7 +173,7 @@ function Test1() {
                   name="a6"
                 />
               }
-              label="он достигает эффективности только при определённых масштабах"/>
+              label="Торговля суконными и льняными товарами"/>
           </FormGroup>
         </FormControl>
       </div>
