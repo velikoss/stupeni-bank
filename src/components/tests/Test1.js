@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import {Checkbox, FormControl, FormControlLabel, FormGroup} from "@material-ui/core";
 import {Button} from "react-bootstrap";
+import Header from "../molecules/Header/Header";
+import Sidebar from "../molecules/Sidebar"
 
 function Test1() {
   function submit() {
@@ -101,6 +103,10 @@ function Test1() {
   };
   return (
     <div>
+      <Header/>
+      <div style={{"display":"flex", "flex-direction":"row"}}>
+      <Sidebar/>
+      <div>
       <div>
         <div className="question">
           <p>Главное преимущество малого бизнеса:</p>
@@ -217,6 +223,8 @@ function Test1() {
       </div>
 
       <Button onClick={submit}>Подтвердить</Button>
+      </div>
+    </div>
     </div>
   );
 }
