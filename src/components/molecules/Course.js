@@ -19,7 +19,10 @@ const Course = () => {
                             Лекция
                             <Link to="/course/lection1" />
                         </MenuItem>
-                        <MenuItem>Тест</MenuItem>
+                        <MenuItem>
+                            Тест
+                            <Link to="/course/test1" />
+                        </MenuItem>
                     </SubMenu>
                     <SubMenu title={`Отличия малого и большого бизнеса`}>
                         <MenuItem>
