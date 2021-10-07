@@ -10,7 +10,7 @@ const Header = () => {
       <Container>
         <Nav>
           <Nav.Link>
-            <img src={logo} width="70" height="85 " alt="Q"/>
+            <img src={logo} width="55" height="70" alt="Q"/>
           </Nav.Link>
         </Nav>
         <Navbar.Brand href="/" className="name">Всеобуч<br/>Центр Инвест</Navbar.Brand>
@@ -19,7 +19,6 @@ const Header = () => {
           <Nav className="me-auto">
             <Nav.Link href="/course" className="title">Курсы</Nav.Link>
             <Nav.Link href="/about" className="title">Информация</Nav.Link>
-            <Nav.Link href="/feedbacks" className="title">Отзывы</Nav.Link>
           </Nav>
           <Nav className="justify-content-end">
             <NavLink onClick={() => app.auth().signOut()} className="title margin:0;">Выйти</NavLink>
