@@ -4,7 +4,7 @@ import PrivateRoute from "./components/molecules/PrivateRoute";
 import Login from "./components/molecules/Login/Login";
 import SignUp from "./components/molecules/SignUp/SignUp";
 import ForgotPassword from "./components/molecules/ForgotPassword/ForgotPassword";
-import SubMain from "./components/molecules/Main/Main";
+import Main from "./components/molecules/Main/Main";
 import Lection1 from "./components/Lections/Lection1.js";
 import LectionRoutes from "./components/molecules/LectionRoutes";
 import Info from "./components/molecules/Info/Info";
@@ -12,7 +12,7 @@ import Info from "./components/molecules/Info/Info";
 function App() {
   return (
     <div>
-      <PrivateRoute exact path="/" component={SubMain}/>
+      <PrivateRoute exact path="/" component={Main}/>
       <Route exact path="/login" component={Login}/>
       <Route exact path="/signup" component={SignUp}/>
       <Route exact path="/about" component={Info}/>
