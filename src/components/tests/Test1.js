@@ -5,31 +5,29 @@ import Header from "../molecules/Header/Header";
 import Sidebar from "../molecules/Sidebar"
 
 function Test1() {
-  function submit() {
-    let count = 0;
+  const [count, setCount] = useState(0)
+  async function submit() {
+    let x = 0
     for (let i in state1) {
-      if (state1[i] === answers[i]) {
-        count++
+
+      if (state1[i] === answers[i] && state1[i]) {
+        x++
       }
     }
     for (let i in state2) {
-      if (state2[i] === answers[i]) {
-        count++
+      if (state2[i] === answers[i] && state2[i]) {
+        x++
       }
     }
     for (let i in state3) {
-      if (state3[i] === answers[i]) {
-        count++
+      if (state3[i] === answers[i] && state3[i]) {
+        x++
       }
     }
-    console.log(count)
-    if (count === 9) {
-      alert("Bingo")
-    } else {
-      alert("Вы долбаеб")
-    }
+    alert(`Верно ${x}/3`)
+
   }
-  const [count, setCount] = useState(0)
+
   const [state1, setState1] = useState({
     a1: false,
     a2: false,
@@ -104,127 +102,129 @@ function Test1() {
   return (
     <div>
       <Header/>
-      <div style={{"display":"flex", "flex-direction":"row"}}>
-      <Sidebar/>
-      <div>
-      <div>
-        <div className="question">
-          <p>Главное преимущество малого бизнеса:</p>
-        </div>
-        <FormControl>
-          <FormGroup>
-            <FormControlLabel
-              control={
-                <Checkbox
-                  color="success"
-                  checked={a1}
-                  onChange={handleChange1}
-                  name="a1"
-                />
-              } label="на его долю приходится 50% валового внутреннего продукта"/>
-            <FormControlLabel
-              control={
-                <Checkbox
-                  color="success"
-                  checked={a2}
-                  onChange={handleChange1}
-                  name="a2"
-                />
-              }
-              label="он предоставляет более качественные продукты и услуги в более сжатые сроки, при более низких издержках"/>
-            <FormControlLabel
-              control={
-                <Checkbox
-                  color="success"
-                  checked={a3}
-                  onChange={handleChange1}
-                  name="a3"
-                />
-              }
-              label="он достигает эффективности только при определённых масштабах"/>
-          </FormGroup>
-        </FormControl>
-      </div>
-      <div>
-        <div className="question">
-          <p>Каковы традиции южнороссийского бизнеса?</p>
-        </div>
-        <FormControl>
-          <FormGroup>
-            <FormControlLabel
-              control={
-                <Checkbox
-                  color="success"
-                  checked={a4}
-                  onChange={handleChange2}
-                  name="a4"
-                />
-              } label="Богатство и гостеприимство"/>
-            <FormControlLabel
-              control={
-                <Checkbox
-                  color="success"
-                  checked={a5}
-                  onChange={handleChange2}
-                  name="a5"
-                />
-              }
-              label="Помощь землякам, меценатство, поддержка образования, забота об окружающей среде"/>
-            <FormControlLabel
-              control={
-                <Checkbox
-                  color="success"
-                  checked={a6}
-                  onChange={handleChange2}
-                  name="a6"
-                />
-              }
-              label="Торговля суконными и льняными товарами"/>
-          </FormGroup>
-        </FormControl>
-      </div>
-      <div>
-        <div className="question">
-          <p>Каковы традиции южнороссийского бизнеса?</p>
-        </div>
-        <FormControl>
-          <FormGroup>
-            <FormControlLabel
-              control={
-                <Checkbox
-                  color="success"
-                  checked={a7}
-                  onChange={handleChange3}
-                  name="a7"
-                />
-              } label="на его долю приходится 50% валового внутреннего продукта"/>
-            <FormControlLabel
-              control={
-                <Checkbox
-                  color="success"
-                  checked={a8}
-                  onChange={handleChange3}
-                  name="a8"
-                />
-              }
-              label="он предоставляет более качественные продукты и услуги в более сжатые сроки, при более низких издержках"/>
-            <FormControlLabel
-              control={
-                <Checkbox
-                  color="success"
-                  checked={a9}
-                  onChange={handleChange3}
-                  name="a9"
-                />
-              }
-              label="он достигает эффективности только при определённых масштабах"/>
-          </FormGroup>
-        </FormControl>
-      </div>
+      <div style={{"display": "flex", "flex-direction": "row"}}>
+        <Sidebar/>
+        <div>
+          <div>
+            <div className="question">
+              <p>Главное преимущество малого бизнеса:</p>
+            </div>
+            <FormControl>
+              <FormGroup>
+                <FormControlLabel
+                  control={
+                    <Checkbox
+                      color="success"
+                      checked={a1}
+                      onChange={handleChange1}
+                      name="a1"
+                    />
+                  } label="на его долю приходится 50% валового внутреннего продукта"/>
+                <FormControlLabel
+                  control={
+                    <Checkbox
+                      color="success"
+                      checked={a2}
+                      onChange={handleChange1}
+                      name="a2"
+                    />
+                  }
+                  label="он предоставляет более качественные продукты и услуги в более сжатые сроки, при более низких издержках"/>
+                <FormControlLabel
+                  control={
+                    <Checkbox
+                      color="success"
+                      checked={a3}
+                      onChange={handleChange1}
+                      name="a3"
+                    />
+                  }
+                  label="он достигает эффективности только при определённых масштабах"/>
+              </FormGroup>
+            </FormControl>
+          </div>
+          <div>
+            <div className="question">
+              <p>Каковы традиции южнороссийского бизнеса?</p>
+            </div>
+            <FormControl>
+              <FormGroup>
+                <FormControlLabel
+                  control={
+                    <Checkbox
+                      color="success"
+                      checked={a4}
+                      onChange={handleChange2}
+                      name="a4"
+                    />
+                  } label="Богатство и гостеприимство"/>
+                <FormControlLabel
+                  control={
+                    <Checkbox
+                      color="success"
+                      checked={a5}
+                      onChange={handleChange2}
+                      name="a5"
+                    />
+                  }
+                  label="Помощь землякам, меценатство, поддержка образования, забота об окружающей среде"/>
+                <FormControlLabel
+                  control={
+                    <Checkbox
+                      color="success"
+                      checked={a6}
+                      onChange={handleChange2}
+                      name="a6"
+                    />
+                  }
+                  label="Торговля суконными и льняными товарами"/>
+              </FormGroup>
+            </FormControl>
+          </div>
+          <div>
+            <div className="question">
+              <p>Первоначальное развитие предпринимательства в России быстрыми темпами осуществлялось во времена
+                правления:
+              </p>
+            </div>
+            <FormControl>
+              <FormGroup>
+                <FormControlLabel
+                  control={
+                    <Checkbox
+                      color="success"
+                      checked={a7}
+                      onChange={handleChange3}
+                      name="a7"
+                    />
+                  } label="Петра I"/>
+                <FormControlLabel
+                  control={
+                    <Checkbox
+                      color="success"
+                      checked={a8}
+                      onChange={handleChange3}
+                      name="a8"
+                    />
+                  }
+                  label="Александра II"/>
+                <FormControlLabel
+                  control={
+                    <Checkbox
+                      color="success"
+                      checked={a9}
+                      onChange={handleChange3}
+                      name="a9"
+                    />
+                  }
+                  label="Екатерины II"/>
+              </FormGroup>
+            </FormControl>
+          </div>
 
-      <Button onClick={submit}>Подтвердить</Button>
+          <Button onClick={submit}>Подтвердить</Button>
+        </div>
       </div>
-    </div>
     </div>
   );
 }
