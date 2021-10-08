@@ -4,5 +4,5 @@ Project for Stupeni Uspeha &amp; Center Invest Bank
 ### TODO:
 - [X] Login backend
 - [X] Login frontend
-- [ ] Main page
+- [X] Main page
 - [ ] Tests
