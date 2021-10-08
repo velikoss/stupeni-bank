@@ -104,7 +104,7 @@ function Test1() {
       <Header/>
       <div style={{"display": "flex", "flex-direction": "row"}}>
         <Sidebar/>
-        <div>
+        <div id="chert_s_nim">
           <div>
             <div className="question">
               <p>Главное преимущество малого бизнеса:</p>
