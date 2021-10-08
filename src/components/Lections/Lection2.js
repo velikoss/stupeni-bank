@@ -2,11 +2,13 @@ import React from 'react';
 import Course from "../molecules/Course/Course";
 import Header from "../molecules/Header/Header";
 import "./Lection.css";
+import {useAuth} from "../molecules/AuthContext";
 
 const Lection2 = () => {
+  const {money, setMoney} = useAuth()
   return (
     <div>
-      <Header/>
+      <Header money={money} setMoney={setMoney}/>
       <div className="content">
         <Course/>
         <div className="Lection">

@@ -2,11 +2,14 @@ import React from 'react';
 import "./Info.css"
 import Header from "../Header/Header";
 import im from "../../../img/info.jpg"
+import {useAuth} from "../AuthContext";
 
 const Info = () => {
+  const {money, setMoney} = useAuth()
+
   return (
     <div>
-      <Header/>
+      <Header money={money} setMoney={setMoney}/>
       <div className="text">
         <p>
           Всеобуч — это система знаний об основах организации малого бизнеса и налогообложения для предпринимателей и

@@ -8,8 +8,10 @@ import Main from "./components/molecules/Main/Main";
 import Lection1 from "./components/Lections/Lection1.js";
 import LectionRoutes from "./components/molecules/LectionRoutes";
 import Info from "./components/molecules/Info/Info";
+import {useState} from "react";
 
 function App() {
+
   return (
     <div>
       <Route exact path="/" component={Main}/>

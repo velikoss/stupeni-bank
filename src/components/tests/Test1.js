@@ -5,8 +5,11 @@ import Header from "../molecules/Header/Header";
 import Sidebar from "../molecules/Sidebar"
 import './Test.css'
 import TestChecker from "../molecules/TestChecker";
+import {useAuth} from "../molecules/AuthContext";
+
 function Test1() {
   const [count, setCount] = useState(0)
+
   async function submit() {
     let x = 0
     for (let i in state1) {
@@ -25,9 +28,12 @@ function Test1() {
         x++
       }
     }
+    if (x === 3) {
+      setMoney(money + 10)
+      console.log(localStorage.getItem("money"))
+    }
     handleShow()
     setCount(x)
-
   }
 
   const [state1, setState1] = useState({
@@ -105,11 +111,11 @@ function Test1() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
+  const {money, setMoney} = useAuth()
 
   return (
     <div>
-      <Header/>
+      <Header money={money} setMoney={setMoney}/>
       <div style={{"display": "flex", "flex-direction": "row"}}>
         <Sidebar/>
         <div id="chert_s_nim">
