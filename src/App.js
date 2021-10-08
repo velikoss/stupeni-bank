@@ -11,7 +11,7 @@ import LectionRoutes from "./components/molecules/LectionRoutes";
 function App() {
   return (
     <div>
-      <PrivateRoute exact path="/" component={Main}/>
+      <Route exact path="/" component={Main}/>
       <Route exact path="/login" component={Login}/>
       <Route exact path="/signup" component={SignUp}/>
       <Route exact path="/forgot-password" component={ForgotPassword}/>

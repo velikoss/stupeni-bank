@@ -9,13 +9,14 @@ import Lection6 from "../Lections/Lection1";
 
 import {Route} from "react-router";
 import Test1 from "../tests/Test1";
+import PrivateRoute from "./PrivateRoute";
 
 const LectionRoutes = () => {
   return (
     <div>
-      <Route exact path="/course/lection1" component={Lection1}/>
-      <Route exact path="/course/test1" component={Test1}/>
-      <Route exact path="/course/lection2" component={Lection2}/>
+      <PrivateRoute exact path="/course/lection1" component={Lection1}/>
+      <PrivateRoute exact path="/course/test1" component={Test1}/>
+      <PrivateRoute exact path="/course/lection2" component={Lection2}/>
       {/*<Route exact path="/course/lection3" component={Lection3}/>*/}
       {/*<Route exact path="/course/lection4" component={Lection4}/>*/}
       {/*<Route exact path="/course/lection5" component={Lection5}/>*/}

@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import {Checkbox, FormControl, FormControlLabel, FormGroup} from "@material-ui/core";
-import {Button} from "react-bootstrap";
+import {Button, Modal} from "react-bootstrap";
 import Header from "../molecules/Header/Header";
 import Sidebar from "../molecules/Sidebar"
 import './Test.css'
+import TestChecker from "../molecules/TestChecker";
 function Test1() {
   const [count, setCount] = useState(0)
   async function submit() {
@@ -24,7 +25,8 @@ function Test1() {
         x++
       }
     }
-    alert(`Верно ${x}/3`)
+    handleShow()
+    setCount(x)
 
   }
 
@@ -99,6 +101,12 @@ function Test1() {
       [a.name]: a.checked
     });
   };
+
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+
   return (
     <div>
       <Header/>
@@ -225,6 +233,9 @@ function Test1() {
           <Button onClick={submit}>Подтвердить</Button>
         </div>
       </div>
+      <Modal show={show} onHide={handleClose}>
+        <TestChecker count={count} handleClose={handleClose}/>
+      </Modal>
     </div>
   );
 }
