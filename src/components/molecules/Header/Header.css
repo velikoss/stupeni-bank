@@ -67,3 +67,11 @@ p {
 .me-auto .navbar-nav {
     justify-content: space-around !important;
 }
+
+.score {
+    color: #18AB00 !important;
+}
+
+.coins {
+    width: 10vw;
+}

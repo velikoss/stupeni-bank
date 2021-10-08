@@ -1,0 +1,21 @@
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+p {
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+    font-size: 26px;
+}
+
+#upText {
+    margin-top: 0;
+}
+
+.bot {
+    margin-bottom: 10vh;
+}
