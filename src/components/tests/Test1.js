@@ -3,7 +3,7 @@ import {Checkbox, FormControl, FormControlLabel, FormGroup} from "@material-ui/c
 import {Button} from "react-bootstrap";
 import Header from "../molecules/Header/Header";
 import Sidebar from "../molecules/Sidebar"
-
+import './Test.css'
 function Test1() {
   const [count, setCount] = useState(0)
   async function submit() {

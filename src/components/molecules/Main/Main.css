@@ -40,7 +40,6 @@
 
 #Description {
     margin-top: 20px;
-    font-size: 30px;
     line-height: 40px;
     color: #424242;
 }
@@ -56,4 +55,9 @@
 
 #Next:hover {
     color: #424242;
+}
+div #Description p {
+    margin:0px;
+    
+    font-size: 20px;
 }

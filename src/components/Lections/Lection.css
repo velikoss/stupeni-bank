@@ -10,5 +10,6 @@ p {
 
 .Lection {
     border: 1em solid #1BB907;
+    border-radius:2rem;
     margin: 2%;
 }
