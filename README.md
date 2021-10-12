@@ -5,4 +5,4 @@ Project for Stupeni Uspeha &amp; Center Invest Bank
 - [X] Login backend
 - [X] Login frontend
 - [X] Main page
-- [ ] Tests
+- [X] Tests
