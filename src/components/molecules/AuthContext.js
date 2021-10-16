@@ -12,7 +12,14 @@ export function AuthProvider({children}) {
   const [currentUser, setCurrentUser] = useState()
   const [loading, setLoading] = useState(true)
 
+  useEffect(() => {
+    const data = localStorage.getItem("money")
+    setMoney(JSON.parse(data))
+  }, [])
 
+  useEffect(() => {
+    localStorage.setItem("money", JSON.stringify(money))
+  }, [money])
 
   function signup(email, password) {
     return auth.createUserWithEmailAndPassword(email, password)
